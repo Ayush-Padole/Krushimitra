@@ -1,0 +1,139 @@
+/* Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    background:linear-gradient(135deg,#eef8ee,#dff5df);
+    padding:40px;
+    color:#333;
+}
+
+/* Heading */
+
+h1{
+    text-align:center;
+    color:#1b5e20;
+    font-size:42px;
+    margin-bottom:35px;
+    text-transform:uppercase;
+    letter-spacing:2px;
+}
+
+/* Table */
+
+table{
+    width:95%;
+    margin:auto;
+    border-collapse:collapse;
+    background:#fff;
+    border-radius:18px;
+    overflow:hidden;
+    box-shadow:0 15px 35px rgba(0,0,0,.15);
+}
+
+/* Header */
+
+table tr:first-child{
+    background:linear-gradient(45deg,#2e7d32,#66bb6a);
+    color:white;
+}
+
+table tr:first-child td{
+    font-size:18px;
+    font-weight:600;
+}
+
+/* Cells */
+
+td{
+    padding:18px;
+    border:1px solid #e6e6e6;
+    text-align:center;
+    font-size:16px;
+}
+
+/* Alternate Rows */
+
+table tr:nth-child(even){
+    background:#f8fff8;
+}
+
+table tr:nth-child(odd):not(:first-child){
+    background:#ffffff;
+}
+
+/* Hover Effect */
+
+table tr:hover:not(:first-child){
+    background:#d7ffd9;
+    transition:.3s;
+}
+
+/* Link Column */
+
+td:last-child{
+    color:#1565c0;
+    font-weight:600;
+    word-break:break-word;
+}
+
+/* Home Button */
+
+a{
+    display:inline-block;
+    margin-top:35px;
+    padding:15px 45px;
+    background:linear-gradient(45deg,#2e7d32,#43a047);
+    color:#fff;
+    text-decoration:none;
+    border-radius:50px;
+    font-size:18px;
+    font-weight:600;
+    transition:.3s;
+    box-shadow:0 8px 20px rgba(0,0,0,.2);
+}
+
+a:hover{
+    background:linear-gradient(45deg,#1b5e20,#388e3c);
+    transform:translateY(-5px);
+    box-shadow:0 12px 25px rgba(0,0,0,.3);
+}
+
+
+/* Responsive */
+
+@media(max-width:768px){
+
+body{
+    padding:15px;
+}
+
+h1{
+    font-size:30px;
+}
+
+table{
+    display:block;
+    overflow-x:auto;
+    white-space:nowrap;
+}
+
+td{
+    padding:12px;
+    font-size:14px;
+}
+
+a{
+    display:block;
+    width:220px;
+    margin:30px auto 0;
+    text-align:center;
+}
+
+}

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>crops page</title>
+    <link rel="stylesheet" href="../static/css/market.css">
+</head>
+<body>
+<div style="text-align: center">
+      <a href="home">Home</a>
+    <a href="news">News</a>
+<a href="market">Market_price</a>
+<a href="government">Government_schemes</a>
+<a href="expert">Experts</a>
+    <a href="trainning">Trainning</a>
+    <h1>Krushi Mitra Crop Guide</h1>
+<p>Discover detailed information about various crops, including suitable soil, climate, growing season, fertilizers, diseases, and harvesting techniques.</p>
+<table border="1">
+    <tr><td><h3><b>ID</b></h3></td>
+        <td><h3><b>Crop-Name</b></h3></td>
+        <td><h3><b>Season</b></h3></td>
+        <td><h3><b>Soiltype</b></h3></td>
+        <td><h3><b>Sowingmonth</b></h3></td>
+        <td><h3><b>Harvestingmonth</b></h3></td>
+        <td><h3><b>Fertilizer</b></h3></td>
+        <td><h3><b>Disease</b></h3></td>
+
+    </tr>
+    {% for x in c1 %}
+    <tr>
+        <td>{{x.id}}</td>
+        <td>{{x.cropname}}</td>
+        <td>{{x.season}}</td>
+        <td>{{x.soiltype}}</td>
+        <td>{{x.sowingmonth}}</td>
+        <td>{{x.harvestingmonth}}</td>
+        <td>{{x.fertilize}}</td>
+        <td>{{x.disease}}</td>
+
+    </tr>
+    {% endfor %}
+</table>
+</div>
+</body>
+</html>

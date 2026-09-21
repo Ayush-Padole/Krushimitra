@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>government page</title>
+    <link rel="stylesheet" href="../static/css/market.css">
+</head>
+<body>
+<div style="text-align: center">
+      <a href="home">Home</a>
+    <a href="news">News</a>
+<a href="market">Market_price</a>
+<a href="government">Government_schemes</a>
+<a href="expert">Experts</a>
+    <a href="trainning">Trainning</a>
+    <h1>Government Schemes Page</h1></div>
+<table border="1">
+    <tr><td><h3><b>ID</b></h3></td>
+        <td><h3><b>Name</b></h3></td>
+        <td><h3><b>Start_date</b></h3></td>
+        <td><h3><b>End_date</b></h3></td>
+        <td><h3><b>Link to Apply</b></h3></td>
+    </tr>
+    {% for x in g1 %}
+    <tr>
+        <td>{{x.id}}</td>
+        <td>{{x.name}}</td>
+        <td>{{x.start_date}}</td>
+        <td>{{x.end_date}}</td>
+        <td>{{x.link}}</td>
+    </tr>
+    {% endfor %}
+</table>
+</body>
+</html>

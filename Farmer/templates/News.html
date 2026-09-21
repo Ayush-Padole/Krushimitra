@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+{%load static%}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>news page</title>
+    <link rel="stylesheet" href="../static/css/news.css">
+</head>
+<body>
+<div style="text-align: center">
+    <a href="home">Home</a>
+<a href="market">Market_price</a>
+<a href="crops">Crpos</a>
+<a href="government">Government_schemes</a>
+<a href="expert">Experts</a>
+    <a href="trainning">Trainning</a>
+    <h1>Daily News</h1>
+    <div class="news">
+        <marquee direction="down" scrollamount="10" height="500">
+            {% for x in all_news %}
+            <div class="box">
+                <h2>{{x.title}}</h2>
+                <p>{{x.description}}</p>
+                <h2>{{x.posted_date}}</h2>
+            </div>
+            <br>
+            {% empty %}
+            <h3>No News Available</h3>
+            {% endfor %}
+        </marquee>
+    </div></div>
+</body>
+</html>

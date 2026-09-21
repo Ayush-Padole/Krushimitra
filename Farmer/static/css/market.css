@@ -1,0 +1,144 @@
+/* Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    background:linear-gradient(135deg,#e8f5e9,#f1f8e9);
+    padding:40px;
+}
+
+/* Main Container */
+
+body > div{
+    width:95%;
+    margin:auto;
+    background:#fff;
+    padding:40px;
+    border-radius:20px;
+    box-shadow:0 15px 35px rgba(0,0,0,.15);
+}
+
+/* Heading */
+
+h1{
+    color:#1b5e20;
+    font-size:42px;
+    margin-bottom:30px;
+    letter-spacing:1px;
+    text-transform:uppercase;
+}
+
+/* Table */
+
+table{
+    width:100%;
+    border-collapse:collapse;
+    margin-top:20px;
+    overflow:hidden;
+    border-radius:15px;
+    box-shadow:0 10px 25px rgba(0,0,0,.15);
+}
+
+/* Table Header */
+
+table tr:first-child{
+    background:linear-gradient(45deg,#2e7d32,#66bb6a);
+    color:#fff;
+    font-size:18px;
+    font-weight:600;
+}
+
+td{
+    padding:18px;
+    border:1px solid #e0e0e0;
+    text-align:center;
+}
+
+/* Alternate Rows */
+
+table tr:nth-child(even){
+    background:#f9fff9;
+}
+
+table tr:nth-child(odd):not(:first-child){
+    background:#ffffff;
+}
+
+/* Hover Effect */
+
+table tr:hover:not(:first-child){
+    background:#dcedc8;
+    transition:.3s;
+}
+
+/* Highlight Price Column */
+
+td:nth-child(4){
+    font-weight:700;
+    color:#2e7d32;
+}
+
+/* Home Button */
+
+a{
+    display:inline-block;
+    margin-top:35px;
+    padding:15px 45px;
+    background:linear-gradient(45deg,#2e7d32,#43a047);
+    color:#fff;
+    text-decoration:none;
+    border-radius:50px;
+    font-size:18px;
+    font-weight:600;
+    transition:.3s;
+    box-shadow:0 8px 20px rgba(0,0,0,.2);
+}
+
+a:hover{
+    background:linear-gradient(45deg,#1b5e20,#388e3c);
+    transform:translateY(-5px);
+    box-shadow:0 12px 25px rgba(0,0,0,.3);
+}
+
+/* Responsive */
+
+@media(max-width:768px){
+
+body{
+    padding:15px;
+}
+
+body > div{
+    padding:20px;
+    overflow-x:auto;
+}
+
+h1{
+    font-size:30px;
+}
+
+table{
+    display:block;
+    overflow-x:auto;
+    white-space:nowrap;
+}
+
+td{
+    padding:12px;
+    font-size:14px;
+}
+
+a{
+    display:block;
+    width:220px;
+    margin:30px auto 0;
+    text-align:center;
+}
+
+}
