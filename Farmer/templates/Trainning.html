@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>trainning page</title>
+    <link rel="stylesheet" href="../static/css/training.css">
+</head>
+<body>
+<h1>Farmer Registration Form</h1>
+<form action="" method="POST" novalidate>
+    {% csrf_token %}
+    {{form2.as_p}}
+    <input type="submit" value="Submit">
+</form>
+<a href="home">Exit</a>
+</body>
+</html>

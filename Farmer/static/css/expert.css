@@ -1,0 +1,154 @@
+/* Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    background:linear-gradient(rgba(240,248,240,.95),rgba(240,248,240,.95)),
+    url("../image/krushi5.jpeg") center/cover fixed;
+    padding:40px;
+}
+
+/* Heading */
+
+h1{
+    text-align:center;
+    color:#1B5E20;
+    font-size:42px;
+    margin-bottom:35px;
+    text-transform:uppercase;
+    letter-spacing:2px;
+    font-weight:700;
+}
+
+/* Table */
+
+table{
+    width:95%;
+    margin:auto;
+    border-collapse:collapse;
+    background:#fff;
+    border-radius:18px;
+    overflow:hidden;
+    box-shadow:0 15px 35px rgba(0,0,0,.18);
+}
+
+/* Header */
+
+table tr:first-child{
+    background:linear-gradient(90deg,#1B5E20,#43A047);
+    color:white;
+}
+
+table tr:first-child td{
+    padding:18px;
+    font-size:18px;
+    border:none;
+}
+
+table tr:first-child h3{
+    color:white;
+    font-size:18px;
+}
+
+/* Data Cells */
+
+td{
+    padding:18px;
+    text-align:center;
+    border:1px solid #e5e5e5;
+    font-size:16px;
+}
+
+/* Alternate Row Colors */
+
+table tr:nth-child(even){
+    background:#F7FFF7;
+}
+
+table tr:nth-child(odd):not(:first-child){
+    background:#FFFFFF;
+}
+
+/* Hover */
+
+table tr:hover:not(:first-child){
+    background:#E8F5E9;
+    transform:scale(1.01);
+    transition:.3s;
+}
+
+/* Highlight Date Columns */
+
+td:nth-child(3),
+td:nth-child(4){
+    color:#2E7D32;
+    font-weight:600;
+}
+
+/* Apply Link Column */
+
+td:last-child{
+    color:#1565C0;
+    font-weight:600;
+}
+
+/* Button */
+
+a{
+    display:inline-block;
+    margin-top:35px;
+    padding:15px 45px;
+    background:linear-gradient(45deg,#2e7d32,#43a047);
+    color:#fff;
+    text-decoration:none;
+    border-radius:50px;
+    font-size:18px;
+    font-weight:600;
+    transition:.3s;
+    box-shadow:0 8px 20px rgba(0,0,0,.2);
+}
+
+a:hover{
+    background:linear-gradient(45deg,#1b5e20,#388e3c);
+    transform:translateY(-5px);
+    box-shadow:0 12px 25px rgba(0,0,0,.3);
+}
+
+
+/* Responsive */
+
+@media(max-width:768px){
+
+body{
+    padding:15px;
+}
+
+h1{
+    font-size:30px;
+}
+
+table{
+    display:block;
+    overflow-x:auto;
+    white-space:nowrap;
+}
+
+td{
+    padding:12px;
+    font-size:14px;
+}
+
+a{
+    display:block;
+    width:220px;
+    margin:30px auto 0;
+    text-align:center;
+}
+
+}

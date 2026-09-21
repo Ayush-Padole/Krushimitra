@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>market page</title>
+    <link rel="stylesheet" href="../static/css/market.css">
+
+</head>
+<body>
+<div style="text-align: center">
+      <a href="home">Home</a>
+    <a href="news">News</a>
+<a href="crops">Crpos</a>
+<a href="government">Government_schemes</a>
+<a href="expert">Experts</a>
+    <a href="trainning">Trainning</a>
+<h1>Market Price of Crops</h1>
+<table border="1">
+    <tr><td>ID</td>
+        <td>Cropname</td>
+        <td>Marketname</td>
+        <td>price</td>
+        <td>date</td>
+    </tr>
+    {% for x in p1 %}
+    <tr>
+        <td>{{x.id}}</td>
+        <td>{{x.Cropname}}</td>
+        <td>{{x.Marketname}}</td>
+        <td>{{x.price}}</td>
+        <td>{{x.date}}</td>
+    </tr>
+    {% endfor %}
+</table>
+</div>
+</body>
+</html>

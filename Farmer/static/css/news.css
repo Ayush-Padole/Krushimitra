@@ -1,0 +1,62 @@
+body{
+    background-color:honeydew;
+    font-family: "Times New Roman";
+    margin:0;
+    padding: 0;
+}
+h1{
+    text-align: center;
+    color:green;
+    margin-top:20px;
+    margin-bottom: 20px;
+}
+.news{
+    width: 70%;
+    height: 500px;
+    margin:auto;
+    background-color: mintcream;
+    border:2px solid green;
+    border-radius: 10px;
+    padding: 15px;
+    overflow: hidden;
+}
+.box {
+    background-color: honeydew;
+    border-bottom: 1px solid grey;
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+}
+.box h2{
+    color: darkgreen;
+    margin-bottom: 10px;
+
+}
+.box p{
+    color: black;
+    text-align: justify;
+    line-height: 25px;
+
+}
+marquee{
+    height: 100%;
+}
+a{
+    display:inline-block;
+    margin:15px;
+    padding:15px 40px;
+    background:linear-gradient(45deg,#2e7d32,#66bb6a);
+    color:white;
+    text-decoration:none;
+    border-radius:40px;
+    font-size:18px;
+    font-weight:600;
+    transition:.4s;
+    box-shadow:0 8px 18px rgba(0,0,0,.25);
+}
+
+a:hover{
+    transform:translateY(-6px);
+    background:linear-gradient(45deg,#1b5e20,#43a047);
+    box-shadow:0 12px 25px rgba(0,0,0,.35);
+}
